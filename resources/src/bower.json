@@ -1,0 +1,23 @@
+{
+  "name": "src",
+  "authors": [
+    "Chris Aves <chris@junctionbox.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "components-font-awesome": "^4.7.0",
+    "intercooler-js": "^1.1.0",
+    "bootstrap": "v4.0.0-alpha.6"
+  },
+  "private": true
+}

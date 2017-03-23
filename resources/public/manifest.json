@@ -1,0 +1,10 @@
+{
+	"vendor": [
+		"vendor.7cfc93f718cbc398e92d.js",
+		"vendor.5931b0b785cfb24e06b2929286392069.css"
+	],
+	"app": [
+		"app.34a64266a59b7b662b97.js",
+		"app.e14cea394cd35db91e78f6e574d14c9c.css"
+	]
+}
