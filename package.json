@@ -1,6 +1,6 @@
 {
-  "name": "webpacl-default",
-  "version": "1.0.0",
+  "name": "webpack-default",
+  "version": "1.0.1",
   "description": "",
   "directories": {
     "doc": "docs"
