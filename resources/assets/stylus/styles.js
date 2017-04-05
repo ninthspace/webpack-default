@@ -2,4 +2,4 @@
 //
 // I use stylus :-)
 
-require('./stylus/modal.styl');
+require('./modal.styl');

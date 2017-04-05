@@ -10,13 +10,13 @@ const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 var CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
-    context: path.resolve(__dirname, './resources'),
+    context: path.resolve(__dirname, './resources/assets'),
     entry: {
-        vendor: ['./src/js/vendor.js'],
-        app: ['./src/app.js', './src/styles.js'],
+        vendor: ['./js/vendor.js'],
+        app: ['./js/app.js', './stylus/styles.js'],
     },
     output: {
-        path: path.resolve(__dirname, './resources/public'),
+        path: path.resolve(__dirname, './public/assets'),
         filename: '[name].[chunkhash].js'
     },
     module: {
@@ -80,17 +80,16 @@ module.exports = {
         // ], {
         //     copyUnmodified: true
         // }),
-        new CleanWebpackPlugin(['public'], {
-            root: path.resolve(__dirname, './resources'),
+        new CleanWebpackPlugin(['public/assets'], {
+            root: path.resolve(__dirname),
             verbose: true,
-            dry: false,
-            exclude: ['test.html']
+            dry: false
         }),
         new ExtractTextPlugin('[name].[contenthash].css'),
         function () {
             this.plugin('done', function (stats) {
                 require('fs').writeFileSync(
-                    path.join(__dirname, 'resources/public/manifest.json'),
+                    path.join(__dirname, 'public/assets/manifest.json'),
                     JSON.stringify(stats.toJson().assetsByChunkName, null, '\t')
                 );
             });

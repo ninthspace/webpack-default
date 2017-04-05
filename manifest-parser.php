@@ -2,7 +2,7 @@
 
 public function manifest($filenameWithExtension)
 {
-    $pathToPublic             = "/resources/public/";
+    $pathToPublic             = "/public/assets";
     $info                     = pathinfo($filenameWithExtension);
     $extension                = $info['extension'];
     $filenameWithoutExtension = basename($filenameWithExtension, '.'.$extension);
