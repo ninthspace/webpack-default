@@ -43,7 +43,7 @@ $ npm run watch
 ```
 $ npm run production
 ```
-# Other notes
+# Cache busting:
 
 Files produced by building have hashes to aid with cache busting.
 

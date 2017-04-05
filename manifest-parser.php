@@ -31,4 +31,4 @@ public function manifest($filenameWithExtension)
 }
 
 // then use manifest('something.js') where a view is built, which will return the full path
-// e.g. '/resources/publicc/something.34a64266a59b7b662b97.js'
+// e.g. '/public/assets/something.34a64266a59b7b662b97.js'
