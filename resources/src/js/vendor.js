@@ -8,4 +8,6 @@ window.Tether = Tether;
 
 require('../bower_components/bootstrap/dist/js/bootstrap.js');
 require('../bower_components/bootstrap/dist/css/bootstrap.css');
-require('../bower_components/components-font-awesome/css/font-awesome.css');
+
+var Intercooler = require('../bower_components/intercooler-js/src/intercooler.js');
+window.Intercooler = Intercooler;

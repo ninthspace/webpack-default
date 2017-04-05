@@ -32,5 +32,8 @@
     "url-loader": "^0.5.8",
     "webpack": "^2.2.1",
     "webpack-md5-hash": "0.0.5"
-  }
+  },
+  "dependencies": {
+    "imagemin-optipng": "^5.2.1"
+  }  
 }
